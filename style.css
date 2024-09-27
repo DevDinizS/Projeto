@@ -1,0 +1,535 @@
+
+/*Estilo Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --cor1:#B4BEC9;
+    --cor2:#79025C;
+    --cor3:#9B3682;
+}
+
+body {
+    background-color: black;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--cor1);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px var(--cor1);
+    transform: scale(1.05);
+    transition: .2s;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+    text-shadow: 2px 2px 2px var(--cor3);
+}
+
+h2.titulo span {
+    color: var(--cor1);
+}
+
+/* Estilo do Header */
+
+header {
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li.menu-desktop {
+    display: inline-block;
+    padding: 0 40px;   
+}
+
+header a {
+    color: rgb(129, 129, 129);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+header.menu-desktop a:hover {
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor3);
+    transform: scale(1.05);
+}
+
+/*Estilo menu mobile*/
+
+.btn-abrir i {
+    color: #B4BEC9;
+    font-size: 40px;
+}
+
+.menu-mobile {
+    background-color: black;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000000;
+    width: 0%;
+    overflow: hidden;
+    transition: .4s;
+}
+
+.menu-mobile.menu-abre {
+    width: 62%;
+}
+
+.menu-mobile.menu-abre ~ .overlay-menu {
+    display: block;
+}
+
+.menu-mobile .btn-fechar {
+    padding: 20px 5%;
+}
+
+.menu-mobile .btn-fechar i {
+    color: white;
+    font-size: 26px;
+}
+
+.menu-mobile nav ul {
+    text-align: right;
+}
+
+.menu-mobile nav ul li a {
+    color: white;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 20px 6%;
+    display: block;
+}
+
+.menu-mobile nav ul li a:hover {
+    background-color: var(--cor3);
+    color: black;
+}
+
+.overlay-menu {
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+}
+
+/*Estilo do main*/
+
+section.toposite {
+    padding: 80px 4%;
+    margin-bottom: 60px;
+}
+
+section.toposite .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.txt-toposite h1 {
+    color: var(--cor1);
+    font-size: 40px;
+    line-height: 40px;
+    text-shadow: 2px 2px 2px #79025C;
+}
+
+.toposite .txt-toposite h1 span {
+    color: white;
+}
+
+.toposite .txt-toposite p {
+    color: white;
+    font-size: 18px;
+    margin: 40px 0px;
+}
+
+
+.toposite .img-toposite img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    border-radius: 100%;
+    box-shadow: 0px 0px 20px var(--cor1);
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Estilo Especialidades*/
+
+section.especialidades {
+    padding: 40px 4%;
+}
+
+section.especialidades .flex {
+    gap: 60px;
+}
+
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 60px;
+    transition: .2s;
+    cursor: pointer;
+    max-width: 400px;
+}
+
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 12px var(--cor3);
+    text-shadow: 0px 0px 2px var(--cor1);
+    background-color: rgba(255, 255, 255, 0.84);
+    color: black;
+}
+
+.especialidades .especialidades-box:hover i {
+    color: var(--cor2);
+    transition: .3s;
+}
+
+.especialidades .especialidades-box i {
+    font-size: 74px;
+    color: white;
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 26px;
+    color: var(--cor1);
+    text-shadow: 2px 2px 2px var(--cor3);
+    margin: 15px 0;
+}
+
+.especialidades .especialidades-box p {
+    font-size: 1.03em;
+}
+
+.especialidades .especialidades-box p span{
+    color: #7dbafa;
+}
+
+/*Estilo SOBRE*/
+
+section.sobre {
+    padding: 80px 4%;
+    margin: 60px 0;
+}
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre {
+    color: white;
+}
+
+.txt-sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px #9B3682;
+}
+
+.txt-sobre h2 span {
+    color: var(--cor1);
+    display: block;
+}
+
+.txt-sobre p {
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: justify;
+}
+
+section.sobre .img-sobre img {
+    border-radius: 40px;
+}
+
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    background-color: #9B3682;
+    font-size: 26px;
+    cursor: pointer;
+    margin: 2px 6px;
+    transition: .2s;
+}
+
+/* ESTILO DO PORTIFÓLIO */
+
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.096);
+}
+
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 3% 100%;
+    cursor: pointer;
+    transition: 6s;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 50% 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.61);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* ESTILO DO FORMULÁRIO DE CONTATO*/
+
+section.formulario {
+    padding: 80px 4%;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 220px;
+}
+
+form .btn-enviar {
+    margin-top: 22px;
+    text-align: center;
+}
+
+form .btn-enviar input[type=submit] {
+    width: 130px;
+    background-color: rgba(255, 255, 255, 0.877);
+    border: 2px solid var(--cor1);
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-shadow: 0px 0px 3px var(--cor3);
+}
+
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 50px 4%;
+    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.096);
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid var(--cor1);
+}
+
+footer i {
+  color: white;
+  font-size: 24px;
+}
+
+footer p a {
+    color: white;
+    padding: 4px;
+}
+
+@media screen and (max-width: 1200px) {
+    /*Classe geral*/
+
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.titulo {
+        font-size: 30px;
+        line-height: 30px;
+    }
+
+    /*Header*/
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+
+    header .logo a img {
+        width: 84%;
+    }
+
+    /*topo do site*/
+
+    section.toposite .flex {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+
+    section.toposite {
+        padding: 20px 8%;
+    }
+
+    .txt-toposite h1 {
+        font-size: 32px;
+    }
+
+    .toposite .img-toposite img{
+        width: 96%;
+    }
+   
+    /*especialidades*/
+
+    section.especialidades {
+        padding: 20px 8%;
+    }
+
+    section.especialidades .flex {
+        align-items: center;
+    }
+
+    /*sobre*/
+
+    section.sobre {
+        padding: 80px 8%;
+    }
+
+    section.sobre .img-sobre img {
+        border-radius: 40px;
+        width: 98%;
+    }
+
+    section.sobre .txt-sobre h2 {
+        font-size: 35px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social {
+        text-align: center;
+    }
+
+    /*portifólio*/
+    
+    section.portfolio {
+        padding: 80px 8%;
+    }
+
+    section.portfolio .flex {
+        gap: 60px;
+    }
+
+    .img-port {
+        width: 96%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .overlay {
+        font-size: 19px;
+    }
+
+    /*rodapé*/
+
+    footer .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .line-footer {
+        text-align: center;
+    }
+
+}
