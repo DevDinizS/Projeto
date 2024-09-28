@@ -152,6 +152,10 @@ header.menu-desktop a:hover {
     display: none;
 }
 
+.btn-abrir {
+    display: none;
+}
+
 /*Estilo do main*/
 
 section.toposite {
@@ -532,4 +536,7 @@ footer p a {
         text-align: center;
     }
 
+    .btn-abrir {
+        display: block;
+    }
 }
