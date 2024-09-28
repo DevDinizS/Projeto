@@ -75,14 +75,14 @@ header nav ul li.menu-desktop {
     padding: 0 40px;   
 }
 
-header a {
+header nav ul a {
     color: rgb(129, 129, 129);
     text-decoration: none;
     display: inline-block;
     transition: .2s;
 }
 
-header.menu-desktop a:hover {
+header.menu-desktop nav ul a:hover {
     color: white;
     text-shadow: 2px 2px 2px var(--cor3);
     transform: scale(1.05);
