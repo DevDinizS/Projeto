@@ -66,23 +66,19 @@ header > .interface {
     justify-content: space-between;
 }
 
-header nav ul {
+header.menu-desktop nav {
     list-style-type: none;
 }
 
-header nav ul li.menu-desktop {
-    display: inline-block;
-    padding: 0 40px;   
-}
-
-header nav ul a {
+header nav a {
     color: rgb(129, 129, 129);
     text-decoration: none;
     display: inline-block;
+    padding: 0 49px;
     transition: .2s;
 }
 
-header.menu-desktop nav ul a:hover {
+header nav a:hover {
     color: white;
     text-shadow: 2px 2px 2px var(--cor3);
     transform: scale(1.05);
