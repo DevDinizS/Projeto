@@ -227,14 +227,14 @@ section.especialidades .flex {
     color: black;
 }
 
-.especialidades .especialidades-box:hover i {
-    color: var(--cor2);
-    transition: .3s;
-}
-
 .especialidades .especialidades-box i {
     font-size: 74px;
     color: white;
+}
+
+.especialidades .especialidades-box:hover i {
+    color: var(--cor2);
+    transition: .3s;
 }
 
 .especialidades .especialidades-box h3{
@@ -242,6 +242,11 @@ section.especialidades .flex {
     color: var(--cor1);
     text-shadow: 2px 2px 2px var(--cor3);
     margin: 15px 0;
+}
+
+.especialidades .especialidades-box:hover h3 {
+    text-shadow: 2px 2px 2px var(--cor1);
+    color: var(--cor3);
 }
 
 .especialidades .especialidades-box p {
