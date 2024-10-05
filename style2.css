@@ -1,11 +1,10 @@
 /*Modo DARK/LIGHT*/
 .botao {
+    position: relative;
     width: 60px;
     height: 30px;
     background-color: #4d4d4d;
     border-radius: 150px;
-    position: relative;
-    margin-top: 20px;
 }
 
 .botao .indicador {
@@ -31,7 +30,12 @@
 
 body.light {
     color: black;
-    background-color: white;
+    background-color: rgb(241, 239, 239);
+}
+
+.light .btn-abrir i {
+    color: var(--cor3);
+    font-size: 40px;
 }
 
 .light h2.titulo {
@@ -54,10 +58,34 @@ body.light {
     color: black;
 }
 
+.light h2 {
+    color: black;
+}
+
+.light .especialidades .especialidades-box i {
+    color: var(--cor3);
+}
+
 .light p {
     color: black;
 }
 
-footer .light i {
+.light footer p > i {
+    color: var(--cor3);
+}
+
+.light footer p > a {
     color: black;
+}
+
+.light form input, .light form textarea {
+    background-color: rgb(218, 216, 216);
+}
+
+
+.light .btn-enviar input[type=submit] {
+    background-color: rgba(54, 54, 54, 0.877);
+    border: 2px solid var(--cor1);
+    color: white;
+    text-shadow: 0px 0px 3px var(--cor3);
 }
