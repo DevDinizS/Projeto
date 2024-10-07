@@ -46,6 +46,11 @@ body.light {
     text-shadow: 2px 2px 2px var(--cor3);
 }
 
+.light h2.titulo span {
+    color: var(--cor3);
+    text-shadow: 2px 2px 2px var(--cor1);
+}
+
 .light header nav a {
     color: black;
     transition: .2s;
@@ -53,6 +58,15 @@ body.light {
 
 .light nav a:hover {
     text-shadow: 2px 2px 2px var(--cor3);
+}
+
+.light .toposite .txt-toposite h1 {
+    color: var(--cor3);
+    text-shadow: 2px 2px 2px var(--cor1);
+}
+
+.light .toposite .txt-toposite span {
+    color: black;
 }
 
 .light .toposite .txt-toposite p {
