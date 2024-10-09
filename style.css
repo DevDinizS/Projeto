@@ -344,6 +344,7 @@ section.portfolio .flex {
     background-color: rgba(0, 0, 0, 0.61);
     border-radius: 40px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 24px;
